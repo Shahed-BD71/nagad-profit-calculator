@@ -52,7 +52,7 @@ export default function ProfitForm() {
               <h2 className="text-3xl font-semibold">Profit</h2>
               <h2 className="text-3xl font-semibold text-green-400">Calculator</h2>
             </div>
-            <div className="md:flex max-w-screen py-12">
+            <div className="md:flex max-w-screen py-12 lg:px-12">
               <Hero />
               <div className="w-full p-4 md:px-16 px-8 py-8">
                 <form>
@@ -68,7 +68,7 @@ export default function ProfitForm() {
                           max: 300000,
                         })}
                         className="input-field"
-                        placeholder="Enter Amount*"
+                        placeholder="Enter Amount* (1000-300000)"
                       />
                       {errors.amount && (
                         <span className="text-red-600">
